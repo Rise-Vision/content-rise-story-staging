@@ -1,0 +1,68 @@
+<html>
+<head>
+	<script>
+	function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if(!e.style.height || e.style.height == '0px') {
+        e.style.height = '100px';
+    }
+    else {
+        e.style.height = '0';
+    }
+}
+		
+		$(document).ready(function () {
+    
+    $('button').click( function () {
+        $('#message-box').slideDown('slow').delay(1500).slideUp('slow');
+    });
+    
+});
+	</script>
+	<style>
+	
+.slide {
+	position: absolute;
+	background-image: url("img/qrcode.png");
+	left:0px;
+	top:100px;
+    width:100px;
+    height:100px;
+    height: 0;
+    transition: height 1s ease;
+    overflow: hidden;
+}
+		
+		@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+    -ms-transform: translateX(-2000px);
+    transform: translateX(-2000px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.btn {
+    cursor:pointer;
+	position: absolute;
+	top: 200px;
+	left:0px;
+}
+
+	</style>
+</head>
+<body>
+	<div id="slider" class="slide"></div>
+	<a class="btn" onclick="toggle_visibility('slider');">Click Me</a>
+
+	
+	
+</body>
+
+</html>

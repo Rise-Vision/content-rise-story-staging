@@ -1,0 +1,89 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>
+	$(document).ready(function () {
+    
+    $('button').click( function () {
+        $('#message-box').slideDown('slow').delay(15000).slideUp('slow');
+    });
+    
+});
+	</script>
+	<style>
+	
+body {
+    padding: 0;
+	overflow: hidden;
+	background-color: #ccc;
+}
+
+
+button {
+	position: absolute;
+	right:2vw;
+	bottom: 2vw;
+	color:white;
+	width:160px;
+	height:40px;
+	background-color:#48B768;
+	border:none;
+	text-decoration: none;
+	outline: none;
+	z-index: 99;
+	font-size: 16px;
+	border-radius: 3px;
+}
+		
+button:hover{
+	background-color: #3D9656 ;
+}
+
+button img {
+	position:absolute;
+	top:5px;
+	left:14px;
+	height:30px;
+}
+
+
+#message-box {
+    display: none;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: helvetica neue, arial;
+    position: absolute;
+    bottom: 0;
+	vertical-align: middle;
+}
+		
+#message-box img{
+	position: absolute;
+	right:2.6vw;
+	bottom: 2vw;
+	width:160px;
+	margin: 0 auto;
+	padding: 0;
+}
+		
+	
+	</style>
+</head>
+<body>
+	
+		
+    <button><img src="img/google_256.png"/>&ensp;&ensp;Sign Up Free</button>
+
+<div id="message-box"><img src="img/qrcode.png"/></div>
+		
+
+
+
+	
+	
+</body>
+
+</html>
